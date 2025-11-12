@@ -1,0 +1,95 @@
+:root {
+    --btn-size:60px;
+    --inner-bgc:rgb(39, 37, 37);
+}
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg2.png");
+    background-size: cover;
+}
+
+#calc {
+    display: flex;
+    flex-direction: column;
+    width:325px;
+    /* box-shadow: 5px 2px 2px rgb(221, 35, 35); */
+    border: 1.3px solid rgba(39, 37, 37, 0.66);
+    background-color: rgb(39, 37, 37);
+    height:460px;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+
+#ans-div {
+    margin: 10px; 
+    /* background-color: var(--inner-bgc); */
+    border-radius: 25px; 
+    border: 1px solid white; 
+    background-color: black; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 50px; 
+}
+#ans {
+    padding: 10px;
+    background: transparent;
+    text-align: right; 
+    padding-right: 10px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--inner-bgc);
+    background: transparent;
+}
+#buttons > button,#submit {
+    box-sizing: border-box;
+    font-size: large;
+    border: 1px solid white;
+    border-radius: 25px;
+    /* margin: 10px; */
+    height: var(--btn-size);
+    width: var(--btn-size);
+}
+
+#buttons > button {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    /* width: 100px; */
+}
+
+/* .animation > button {
+    transition:all 0.5s ease-out allow-discrete;
+    width: 60px;
+} */
+
+#buttons > button:hover,#submit:hover {
+    border: 2px solid white;
+}
+#buttons > button:active,#submit:active {
+    border: 2px solid white;
+    font-size: medium;
+}
+#submit {
+    background-color: blueviolet;
+}
