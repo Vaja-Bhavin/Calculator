@@ -46,7 +46,6 @@ const equal = () => {
     }
     complate = true
     ans.innerText = eval(query)
-    // console.log(eval(query))
     lastOp = false
 }
 
@@ -99,4 +98,5 @@ document.addEventListener("keypress", (key) => {
     } else if (k == "/") {
         addOp("/")
     }*/
+
 })
